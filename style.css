@@ -82,8 +82,12 @@ form .input-field:first-child{
     transform-origin: left;
 }
 
+.input-field input:focus ~ .underline::after {
+    transform: scaleX(1); /*pra deixar o roxo da linha só quando tiver selecionado*/
+}
+
 .input-field input{
-    outline: nome;
+    outline: none;
     font-size: 0.9rem;
     color: rgba(0,0,0,0.7);
     width:100%;
@@ -133,7 +137,7 @@ form input[type="submit"]:hover{
     margin-top: 1rem;
 }
 
-.footer .social-field a i{
+.footer .social-field a i {
     margin: 0 0.5rem;
     width:15px;
 }
